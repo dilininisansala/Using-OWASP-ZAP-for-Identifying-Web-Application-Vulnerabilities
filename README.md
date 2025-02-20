@@ -74,7 +74,7 @@ Passive scans review all HTTP requests and responses from the application, looki
 ![image](https://github.com/user-attachments/assets/41ac8fd1-3911-42ea-bc84-74bdddda63c0)
 
 ## Active scanning
-Active scans, will create and modify requests being sent to the application, sending test requests that will surface vulnerabilities that would not be caught in a passive scan. Active scans are definitely a better way to test for vulnerabilities in your application. Active scanning attempts to find potential vulnerabilities by using known attacks against the selected targets. Active scanning is a real attack on those targets and can put the targets at risk, so do not use active scanning against targets you do not have permission to test. Active scans put the application at risk, so do not use active scanning against web applications you do not have permission to test.
+Active scans, will create and modify requests being sent to the application, sending test requests that will surface vulnerabilities that would not be caught in a passive scan. Active scans are definitely a better way to test for vulnerabilities in your application. Active scanning attempts to find potential vulnerabilities by using known attacks against the selected targets. Active scanning is a real attack on those targets and can put the targets at risk, so do not use active scanning against targets you do not have permission to test. 
 
 #### Perform Active Scan
 * Log in to DVWA using your browser.
