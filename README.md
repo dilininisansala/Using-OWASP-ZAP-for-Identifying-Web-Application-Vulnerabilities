@@ -52,14 +52,12 @@ The easiest way to start using ZAP is via the Quick Start tab. To run a Quick St
 * Click the Automated Scan button.
 * In the URL to attack text box, enter the full URL of the web application you want to attack.
 * Click the Attack
-
-Once you click the ‘Attack’ button, ZAP will start crawling the web application with its spider and passively scan each page it finds. Then ZAP will use the active scanner to attack all of the discovered pages, functionality and parameters.
+ZAP will start crawling the web application with its spider and passively scan each page it finds. Then ZAP will use the active scanner to attack all of the discovered pages, functionality and parameters.
 
 ![image3](https://github.com/user-attachments/assets/05d3006f-8e4c-4ffb-88e0-45fde74d817e)
 
 ## Exploring an Application Manually 
 You can launch browsers that are pre-configured to proxy through ZAP via the Quick Start tab. Browsers launched in this way will also ignore any certificate validation warnings that would otherwise be reported.
-
 To Manually Explore the web application:
 * Start ZAP and click the Quick Start tab of the Workspace Window.
 * Click the large Manual Explore button.
@@ -70,16 +68,6 @@ To Manually Explore the web application:
 ![image5](https://github.com/user-attachments/assets/9324f3a4-4b75-43b7-860b-7436ce342ae3)
 
 Now explore all of the targeted web applications through this browser. ZAP passively scans all the requests and responses made during your exploration for vulnerabilities, continues to build the site tree, and records alerts for potential vulnerabilities found during the exploration. Here, you will be given penetration testing tools such as spiders, and if a vulnerability is discovered, an alert flag will be added to the alerts panel.
-
-## Monitor the Scan Progress
-### Sites Panel
-Shows the structure of the target site, including all discovered URLs and resources. To examine a tree view of the explored pages, click the Sites tab in the Tree Window. You can expand the nodes to see the individual URLs accessed.
-
-### Alerts Panel
-Displays identified vulnerabilities as the scan progresses. Each alert includes details on the issue, risk level (high, medium, low), and recommendations. The left-hand side of the Footer contains a count of the Alerts found during your test, broken out into risk categories. These risk categories are
-
-![image4](https://github.com/user-attachments/assets/a8897b70-674c-4fc1-b556-57767a11265d)
-![image](https://github.com/user-attachments/assets/8232eb75-6c09-478d-be8c-1f0b7c0722d2)
 
 ## Passive scanning
 Passive scans review all HTTP requests and responses from the application, looking for indicators of security vulnerabilities. These scans do not change anything about the requests. Passive scanning is good at finding some vulnerabilities and as a way to get a feel for the basic security state of a web application.
@@ -100,10 +88,19 @@ Active scans, will create and modify requests being sent to the application, sen
 * Configure Attack Strength and Scan Policy (e.g., SQL Injection, XSS).
 * Click Start Scan and wait for results.
 ![image](https://github.com/user-attachments/assets/c43df11a-9f05-437c-be39-1161326eea4f)
-  
-## Inspecting the test results
-Once the scan is completed, ZAP generates a list of issues that are found during the scan. Go to the Alerts tab (bottom pane) to view a summary of the findings. All the issues are marked with colour coded flags. Click each alert displayed in that window to display the URL and the vulnerability detected in the right side of the Information Window. In the Workspace Windows, click the Response tab to see the contents of the header and body of the response. The part of the response that generated the alert will be highlighted.
+
+## Monitor the Scan Progress
+Once the scan is completed, ZAP generates a list of issues that are found during the scan. Go to the Alerts tab (bottom pane) to view a summary of the findings. Click each alert displayed in that window to display the URL and the vulnerability detected in the right side of the Information Window. In the Workspace Windows, click the Response tab to see the contents of the header and body of the response. The part of the response that generated the alert will be highlighted.
+
+### Sites Panel
+Shows the structure of the target site, including all discovered URLs and resources. To examine a tree view of the explored pages, click the Sites tab in the Tree Window. You can expand the nodes to see the individual URLs accessed.
+
+### Alerts Panel
+Displays identified vulnerabilities as the scan progresses. Each alert includes details on the issue, risk level (high, medium, low), and recommendations. The left-hand side of the Footer contains a count of the Alerts found during your test, broken out into risk categories. These risk categories are
+![image4](https://github.com/user-attachments/assets/a8897b70-674c-4fc1-b556-57767a11265d)
+![image](https://github.com/user-attachments/assets/8232eb75-6c09-478d-be8c-1f0b7c0722d2)
 
 ## Save the Report
 To generate a report for documentation or analysis:
 Go to Report > Generate Report
+![image](https://github.com/user-attachments/assets/34691a03-627f-4ddc-85cd-5c83140f9f69)
