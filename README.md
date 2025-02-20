@@ -16,7 +16,15 @@ The ZAP Desktop UI is composed of the following elements:
 <img width="581" alt="image1" src="https://github.com/user-attachments/assets/9e3eb0ff-2e47-4d23-ba4b-966699f40cd3" />
 
 ## Tests Run by ZAP
-By default, ZAP scans include all of the tests in a Release status. However, users can choose to include rules that are included in alpha or beta status if they are interested.
+By default, ZAP scans include all of the tests in a **Release** status. However, users can choose to include rules that are included in **alpha** or **beta** status if they are interested.
+
+### Scan Policy in OWASP ZAP
+A scan policy defines which security rules (Active Scan Rules) will be applied during a scan. Users can modify the policy to enable or disable specific rules based on their needs.
+ZAP classifies rules into three categories:
+* Release (default) – Well-tested, stable rules.
+* Beta – Less tested but generally reliable rules.
+* Alpha – Experimental rules that may produce false positives.
+  
 ![image2](https://github.com/user-attachments/assets/ccd61130-f4ca-4b2b-9def-3429d76dc8fd)
 
 ## Spidering the web application
