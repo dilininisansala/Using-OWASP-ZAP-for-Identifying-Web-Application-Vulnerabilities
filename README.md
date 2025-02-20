@@ -134,6 +134,7 @@ Shows the structure of the target site, including all discovered URLs and resour
 
 ### Alerts Panel
 Displays identified vulnerabilities as the scan progresses. Each alert includes details on the issue, risk level (high, medium, low), and recommendations. The left-hand side of the Footer contains a count of the Alerts found during your test, broken out into risk categories. These risk categories are
+
 ![image4](https://github.com/user-attachments/assets/a8897b70-674c-4fc1-b556-57767a11265d)
 ![image](https://github.com/user-attachments/assets/8232eb75-6c09-478d-be8c-1f0b7c0722d2)
 
