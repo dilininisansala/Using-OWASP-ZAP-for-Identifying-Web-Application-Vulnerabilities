@@ -76,7 +76,7 @@ Passive scans review all HTTP requests and responses from the application, looki
 ## Active scanning
 Active scans, will create and modify requests being sent to the application, sending test requests that will surface vulnerabilities that would not be caught in a passive scan. Active scans are definitely a better way to test for vulnerabilities in your application. Active scanning attempts to find potential vulnerabilities by using known attacks against the selected targets. Active scanning is a real attack on those targets and can put the targets at risk, so do not use active scanning against targets you do not have permission to test. Active scans put the application at risk, so do not use active scanning against web applications you do not have permission to test.
 
-### Perform Active Scan
+#### Perform Active Scan
 * Log in to DVWA using your browser.
 * Intercept the request in ZAP:
   * Click Sites > DVWA > Right-click > Include in Context > Default Context.
@@ -88,6 +88,45 @@ Active scans, will create and modify requests being sent to the application, sen
 * Configure Attack Strength and Scan Policy (e.g., SQL Injection, XSS).
 * Click Start Scan and wait for results.
 ![image](https://github.com/user-attachments/assets/c43df11a-9f05-437c-be39-1161326eea4f)
+
+## Manual Testing
+### Spidering (Crawling the Web App)
+Spidering helps identify all accessible pages and endpoints in Damn Vulnerable Web Application (DVWA).
+* Right-click on http://localhost/DVWA in the Sites tab.
+* Click Attack > Spider Scan to find hidden links and pages. 
+* Check the History tab for newly discovered URLs.
+
+ZAP will crawl the application and list all discovered endpoints.
+![image](https://github.com/user-attachments/assets/1ec2ec20-170f-46ff-ac30-fc6400d20ea5)
+![image](https://github.com/user-attachments/assets/93e9b994-2c4a-4cc9-8dd5-9d4a33e09755)
+
+### Fuzzing Input Fields in DVWA
+Fuzzing helps test input fields for vulnerabilities by injecting various payloads.
+* Navigate to an input field in DVWA, find a login form or search box.
+* To Intercept the Request, go to the History tab, find the request, right-click, and select Attack → Fuzz.
+* ZAP will open the Fuzzer Window.
+* Select the 'name' parameter for fuzzing.
+* Then click 'Add' to select a fuzzing payload (SQL Injection, XSS, etc.).
+* Click Start Fuzzing 
+* The Fuzzer Results tab will show responses for each payload.
+
+**Common Choices for Name Fuzzing**
+* Strings - Best for XSS, SQL Injection, and General Fuzzing
+* Regex - Useful for Pattern-Based Testing
+* File Fuzzers - For Large-Scale Testing
+* Script - For Advanced Custom Payloads
+
+Check for HTTP response changes, alerts, or reflected payloads.
+![image](https://github.com/user-attachments/assets/721105ba-792f-4c29-84b3-d5f55957c82d)
+![image](https://github.com/user-attachments/assets/d040782f-499f-4708-8a41-bcad5dd28921)
+![image](https://github.com/user-attachments/assets/782cf67c-b1bf-4fec-beb5-35cafaba3b95)
+
+Open your browser and enter
+```
+http://localhost/DVWA/vulnerabilities/xss_r/?name=<script>alert('XSS')</script>
+```
+If the alert executes, the site is vulnerable to Reflected XSS.
+![image](https://github.com/user-attachments/assets/a6fa34e5-b2a9-4cd0-9387-e9e876e58ba5)
 
 ## Monitor the Scan Progress
 Once the scan is complete, view findings in the Alerts tab (bottom pane). Click an alert to see the detected vulnerability and affected URL in the Information Window. Click each alert displayed in that window to display the URL and the vulnerability detected in the right side of the Information Window. In the Workspace Windows, click the Response tab to see the contents of the header and body of the response. 
