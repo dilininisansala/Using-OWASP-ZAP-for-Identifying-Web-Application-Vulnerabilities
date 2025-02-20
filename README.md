@@ -90,7 +90,7 @@ Active scans, will create and modify requests being sent to the application, sen
 ![image](https://github.com/user-attachments/assets/c43df11a-9f05-437c-be39-1161326eea4f)
 
 ## Monitor the Scan Progress
-Once the scan is completed, ZAP generates a list of issues that are found during the scan. Go to the Alerts tab (bottom pane) to view a summary of the findings. Click each alert displayed in that window to display the URL and the vulnerability detected in the right side of the Information Window. In the Workspace Windows, click the Response tab to see the contents of the header and body of the response. The part of the response that generated the alert will be highlighted.
+Once the scan is complete, view findings in the Alerts tab (bottom pane). Click an alert to see the detected vulnerability and affected URL in the Information Window. Click each alert displayed in that window to display the URL and the vulnerability detected in the right side of the Information Window. In the Workspace Windows, click the Response tab to see the contents of the header and body of the response. 
 
 ### Sites Panel
 Shows the structure of the target site, including all discovered URLs and resources. To examine a tree view of the explored pages, click the Sites tab in the Tree Window. You can expand the nodes to see the individual URLs accessed.
@@ -102,6 +102,7 @@ Displays identified vulnerabilities as the scan progresses. Each alert includes 
 
 ## Save the Report
 To generate a report for documentation or analysis:
+
 Go to Report > Generate Report
 ![image](https://github.com/user-attachments/assets/34691a03-627f-4ddc-85cd-5c83140f9f69)
 ![image](https://github.com/user-attachments/assets/188b604a-08aa-4395-8df7-43b94f5764a1)
