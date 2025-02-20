@@ -89,19 +89,16 @@ Passive scans review all HTTP requests and responses from the application, looki
 Active scans, will create and modify requests being sent to the application, sending test requests that will surface vulnerabilities that would not be caught in a passive scan. Active scans are definitely a better way to test for vulnerabilities in your application. Active scanning attempts to find potential vulnerabilities by using known attacks against the selected targets. Active scanning is a real attack on those targets and can put the targets at risk, so do not use active scanning against targets you do not have permission to test. Active scans put the application at risk, so do not use active scanning against web applications you do not have permission to test.
 
 ### Perform Active Scan
-![image](https://github.com/user-attachments/assets/0da0f508-51cf-4b70-8328-e6002836796a)
-
 * Log in to DVWA using your browser.
 * Intercept the request in ZAP:
   * Click Sites > DVWA > Right-click > Include in Context > Default Context.
   * Configure the login request.
- ![image](https://github.com/user-attachments/assets/39caf6a6-1745-4f43-a960-899de7ceaeae)
-
+![image](https://github.com/user-attachments/assets/0da0f508-51cf-4b70-8328-e6002836796a)
+![image](https://github.com/user-attachments/assets/39caf6a6-1745-4f43-a960-899de7ceaeae)
 * Go to Sites > DVWA > Right-click > Attack > Active Scan.
+![image](https://github.com/user-attachments/assets/e9cf5b5e-583b-4073-b2b5-a1b9e5fe2e5c)
 * Configure Attack Strength and Scan Policy (e.g., SQL Injection, XSS).
 * Click Start Scan and wait for results.
-
-![image](https://github.com/user-attachments/assets/e9cf5b5e-583b-4073-b2b5-a1b9e5fe2e5c)
 ![image](https://github.com/user-attachments/assets/c43df11a-9f05-437c-be39-1161326eea4f)
   
 ## Inspecting the test results
