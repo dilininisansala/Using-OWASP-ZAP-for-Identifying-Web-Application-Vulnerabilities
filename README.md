@@ -95,9 +95,8 @@ Spidering helps identify all accessible pages and endpoints in Damn Vulnerable W
 * Right-click on http://localhost/DVWA in the Sites tab.
 * Click Attack > Spider Scan to find hidden links and pages. 
 * Check the History tab for newly discovered URLs.
-
-ZAP will crawl the application and list all discovered endpoints.
 ![image](https://github.com/user-attachments/assets/1ec2ec20-170f-46ff-ac30-fc6400d20ea5)
+ZAP will crawl the application and list all discovered endpoints.
 ![image](https://github.com/user-attachments/assets/93e9b994-2c4a-4cc9-8dd5-9d4a33e09755)
 
 ### Fuzzing Input Fields in DVWA
@@ -109,8 +108,6 @@ Fuzzing helps test input fields for vulnerabilities by injecting various payload
 * Then click 'Add' to select a fuzzing payload (SQL Injection, XSS, etc.).
 * Click Start Fuzzing 
 * The Fuzzer Results tab will show responses for each payload.
-
-Check for HTTP response changes, alerts, or reflected payloads.
 ![image](https://github.com/user-attachments/assets/721105ba-792f-4c29-84b3-d5f55957c82d)
 
 **Common Choices for Name Fuzzing**
@@ -119,6 +116,7 @@ Check for HTTP response changes, alerts, or reflected payloads.
 * File Fuzzers - For Large-Scale Testing
 * Script - For Advanced Custom Payloads
 ![image](https://github.com/user-attachments/assets/d040782f-499f-4708-8a41-bcad5dd28921)
+Check for HTTP response changes, alerts, or reflected payloads.
 ![image](https://github.com/user-attachments/assets/782cf67c-b1bf-4fec-beb5-35cafaba3b95)
 
 Open your browser and enter
