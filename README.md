@@ -110,14 +110,14 @@ Fuzzing helps test input fields for vulnerabilities by injecting various payload
 * Click Start Fuzzing 
 * The Fuzzer Results tab will show responses for each payload.
 
+Check for HTTP response changes, alerts, or reflected payloads.
+![image](https://github.com/user-attachments/assets/721105ba-792f-4c29-84b3-d5f55957c82d)
+
 **Common Choices for Name Fuzzing**
 * Strings - Best for XSS, SQL Injection, and General Fuzzing
 * Regex - Useful for Pattern-Based Testing
 * File Fuzzers - For Large-Scale Testing
 * Script - For Advanced Custom Payloads
-
-Check for HTTP response changes, alerts, or reflected payloads.
-![image](https://github.com/user-attachments/assets/721105ba-792f-4c29-84b3-d5f55957c82d)
 ![image](https://github.com/user-attachments/assets/d040782f-499f-4708-8a41-bcad5dd28921)
 ![image](https://github.com/user-attachments/assets/782cf67c-b1bf-4fec-beb5-35cafaba3b95)
 
