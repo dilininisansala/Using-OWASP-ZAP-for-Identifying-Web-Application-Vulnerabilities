@@ -36,6 +36,16 @@ The traditional ZAP spider discovers links by examining the HTML in responses fr
 ### AJAX spider
 This is more likely to be effective for AJAX applications. This spider explores the web application by invoking browsers which then follow the links that have been generated. The AJAX spider is slower than the traditional spider.
 
+### Spidering
+* Discovers URLs & links within a website by following anchor tags <a>.
+* Parses HTML to extract links & follows them recursively.
+* Ideal for Static websites, traditional HTML pages.
+
+### Crawling
+* More advanced—simulates user actions to explore dynamic content (e.g., JavaScript-based pages).
+* Uses headless browser automation to interact with the application (like clicking buttons, expanding menus, etc.).
+* Ideal for Modern web apps with JavaScript frameworks (React, Angular, Vue).
+
 ## Run an Automated Scan
 The easiest way to start using ZAP is via the Quick Start tab. To run a Quick Start Automated Scan :
 * Start ZAP and go to the Quick Start tab of the Workspace Window.
@@ -82,15 +92,3 @@ Once the scan is completed, ZAP generates a list of issues that are found during
 ## Save the Report
 To generate a report for documentation or analysis:
 Go to Report > Generate Report
-
-
-
-
-
-
-
-
-
-
-
-
