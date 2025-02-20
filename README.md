@@ -104,3 +104,4 @@ Displays identified vulnerabilities as the scan progresses. Each alert includes 
 To generate a report for documentation or analysis:
 Go to Report > Generate Report
 ![image](https://github.com/user-attachments/assets/34691a03-627f-4ddc-85cd-5c83140f9f69)
+![image](https://github.com/user-attachments/assets/188b604a-08aa-4395-8df7-43b94f5764a1)
